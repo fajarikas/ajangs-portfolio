@@ -24,7 +24,7 @@ const HomeHero = () => {
   return (
     <div className="h-screen ">
       <Fade cascade={true}>
-        <div className="min-h-screen md:h-screen block md:flex items-center space-x-16 md:pt-0 pt-28 w-full mx-auto">
+        <div className="min-h-screen md:h-screen block md:flex items-center space-x-16 md:pt-24 pt-28 w-full mx-auto">
           <img
             src={ProfileImage}
             alt="Profile"
@@ -39,9 +39,17 @@ const HomeHero = () => {
               I am a <span ref={el} className="text-green"></span>
               <span className="text-white"> Developer</span>
             </p>
-            <p className="text-white text-justify md:text-left md:w-full mt-5 md:mt-24 font-light text-sm md:text-base">
-              Within this portfolio, you'll find a curated collection of my best
-              work, including web development, design, and branding projects.
+            <p className="text-white text-justify md:text-left md:w-full mt-5 md:mt-10 font-light text-sm md:text-base">
+              Thanks for visiting my portfolio. I specialize in web development,
+              design, and branding. I create attractive and functional websites
+              using front-end languages such as HTML, CSS, and JavaScript, as
+              well as back-end frameworks like Node.js and Laravel.
+              Additionally, I craft cohesive branding strategies for logos,
+              marketing materials, and overall brand identity. With a keen eye
+              for detail and dedication to exceptional results, I approach each
+              project with creativity and precision. I'm committed to bringing
+              your vision to life through collaboration on your next project.
+              Thank you for exploring my work.
             </p>
 
             <div className="flex justify-between items-center mt-5 md:mt-10">
