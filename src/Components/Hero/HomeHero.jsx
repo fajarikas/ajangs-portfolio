@@ -51,7 +51,7 @@ const HomeHero = () => {
               </div>
             </div>
           </div>
-          <div className="md:absolute static mt-48 md:mt-0 md:bottom-0 md:left-0 md:right-0 md:mb-8 ">
+          <div className="hidden md:inline md:absolute static mt-48 md:mt-0 md:bottom-0 md:left-0 md:right-0 md:mb-8 ">
             <FollowMe />
           </div>
         </Fade>
