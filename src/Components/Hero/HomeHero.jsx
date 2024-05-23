@@ -31,16 +31,16 @@ const HomeHero = () => {
               alt="Profile"
               className="w-9/12 mx-auto md:mx-0 md:w-1/3 border-4 border-green rounded-2xl p-1   "
             />
-            <div className="md:w-3/4 w-screen md:mt-0 mt-5">
+            <div className="w-9/12 md:w-3/4  md:mt-0 mt-5">
               <p className="text-green text-lg text-left">Hello 👋 I am</p>
-              <p className="font-semibold text-3xl md:text-7xl text-white">
+              <p className="font-semibold text-4xl md:text-7xl text-white">
                 Fajar Ika<span className="text-green"> Saputra</span>,
               </p>
               <p className="text-white font-semibold mt-5 text-2xl md:text-4xl">
                 I am a <span ref={el} className="text-green"></span>
                 <span className="text-white"> Developer</span>
               </p>
-              <p className="text-white w-3/4 text-justify md:text-left md:w-full mt-5 md:mt-24 font-light text-sm md:text-base">
+              <p className="text-white text-justify md:text-left md:w-full mt-5 md:mt-24 font-light text-sm md:text-base">
                 Within this portfolio, you'll find a curated collection of my
                 best work, including web development, design, and branding
                 projects.
@@ -51,7 +51,7 @@ const HomeHero = () => {
               </div>
             </div>
           </div>
-          <div className="md:absolute relative mt-32 md:mt-0 md:bottom-0 md:left-0 md:right-0 md:mb-8 ">
+          <div className="md:absolute static mt-48 md:mt-0 md:bottom-0 md:left-0 md:right-0 md:mb-8 ">
             <FollowMe />
           </div>
         </Fade>

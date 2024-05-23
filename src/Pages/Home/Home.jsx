@@ -11,7 +11,7 @@ const Home = () => {
       <div className="h-screen">
         <HomeHero />
       </div>
-      <div className="mt-60 md:mt-10">
+      <div className="mt-72 md:mt-10">
         <AboutMe
           content="Welcome to my portfolio! Here, you'll discover a meticulously curated collection showcasing the pinnacle of my professional endeavors. Delve into a diverse array of projects, each meticulously crafted to embody the essence of quality, innovation, and an unwavering dedication to perfection.
           Embark on a journey through my repertoire, where you'll encounter a myriad of projects spanning various domains. From captivating web designs that seamlessly blend aesthetics with functionality, to intricate graphic designs that breathe life into visual storytelling, every creation reflects my passion for excellence and creativity.

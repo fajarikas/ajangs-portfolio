@@ -5,19 +5,19 @@ import Navbar from "./Components/Navbar/Navbar";
 import Home from "./Pages/Home/Home";
 import React from "react";
 import Footer from "./Components/Footer/Footer";
-import Background from "../public/assets/images/bg.png";
 
 function App() {
   return (
     <>
-      <div className="bg-[#020202] h-full font-be-vietnam z-100">
-        <img src={Background} className="z-0 absolute" />
+      <div className="bg-[#020202] min-h-screen max-w-screen font-be-vietnam overflow-hidden">
         <Router>
-          <div className="w-11/12 md:w-10/12 mx-auto  ">
+          <div className="w-11/12 md:w-10/12 mx-auto overflow-hidden">
             <Navbar />
-            <Routes>
-              <Route path="/" element={<Home />}></Route>
-            </Routes>
+            <div className="relative z-10">
+              <Routes>
+                <Route path="/" element={<Home />} />
+              </Routes>
+            </div>
           </div>
           <Footer />
         </Router>
