@@ -22,7 +22,7 @@ const HomeHero = () => {
   }, []);
 
   return (
-    <div className="h-screen relative">
+    <div className="h-screen ">
       <Fade cascade={true}>
         <div className="min-h-screen md:h-screen block md:flex items-center space-x-16 md:pt-0 pt-28 w-full mx-auto">
           <img
@@ -44,13 +44,11 @@ const HomeHero = () => {
               work, including web development, design, and branding projects.
             </p>
 
-            <div className="mt-5 md:mt-10">
-              <RightArrowButton url="/portfolio" text="View Portfolio" />
+            <div className="flex justify-between items-center mt-5 md:mt-10">
+              <RightArrowButton url="/about" text="View More" />
+              <FollowMe />
             </div>
           </div>
-        </div>
-        <div className="absolute bottom-0 left-0 right-0 ">
-          <FollowMe />
         </div>
       </Fade>
     </div>
