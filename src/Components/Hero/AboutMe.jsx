@@ -1,11 +1,13 @@
-import { Fade } from "react-awesome-reveal";
+import { Fade, Slide } from "react-awesome-reveal";
 import TextLeft from "../Header/TextLeft";
 
 const AboutMe = ({ title, content }) => {
   return (
-    <div>
-      <Fade cascade={true}>
+    <div className="">
+      <Slide direction="right">
         <TextLeft title="About Me" />
+      </Slide>
+      <Fade cascade={true}>
         <p className="font-semibold text-3xl md:text-5xl mt-3 text-white">
           {title}
         </p>
