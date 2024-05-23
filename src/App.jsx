@@ -7,6 +7,7 @@ import Loading from "./Components/Loading/Loading";
 import "./App.css";
 import "./index.css";
 import About from "./Pages/About/About";
+import Service from "./Pages/Service/Service";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -40,6 +41,7 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/home" element={<Home />} />
               <Route path="/about" element={<About />} />
+              <Route path="/services" element={<Service />} />
             </Routes>
           </div>
         </div>

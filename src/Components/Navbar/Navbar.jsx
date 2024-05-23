@@ -28,8 +28,8 @@ const Navbar = () => {
             <NavbarMenu url="/home" name="Home" number="01" />
             <NavbarMenu url="/about" name="About" number="02" />
             <NavbarMenu url="/services" name="Services" number="03" />
-            <NavbarMenu url="/" name="Product" number="04" />
-            <NavbarMenu url="/" name="Contact" number="05" />
+            {/* <NavbarMenu url="/" name="Product" number="04" /> */}
+            {/* <NavbarMenu url="/" name="Contact" number="05" /> */}
           </div>
           <button onClick={handleClick} className="inline md:hidden">
             <CgMenuRight className="text-white text-2xl" />
@@ -41,9 +41,9 @@ const Navbar = () => {
             <div className=" text-gray-400">
               <NavbarMenu url="/home" name="Home" number="01" />
               <NavbarMenu url="/about" name="About" number="02" />
-              <NavbarMenu url="/" name="Services" number="03" />
-              <NavbarMenu url="/" name="Product" number="04" />
-              <NavbarMenu url="/" name="Contact" number="05" />
+              <NavbarMenu url="/services" name="Services" number="03" />
+              {/* <NavbarMenu url="/" name="Product" number="04" /> */}
+              {/* <NavbarMenu url="/" name="Contact" number="05" /> */}
             </div>
           </div>
         )}

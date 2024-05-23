@@ -1,11 +1,12 @@
 import { useNavigate } from "react-router-dom";
 
-const Button = ({ text, link }) => {
+const Button = ({ text, onClick }) => {
   const navigate = useNavigate();
   return (
     <button
-      onClick={() => navigate(link)}
-      className="bg-green text-white px-5 py-2 rounded-md"
+      // onClick={() => navigate(link)}
+      onClick={onClick}
+      className="bg-green text-white text-sm px-5 py-2 rounded-md"
     >
       {text}
     </button>
