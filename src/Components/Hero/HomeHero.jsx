@@ -49,7 +49,7 @@ const HomeHero = () => {
             </div>
           </div>
         </div>
-        <div className="absolute bottom-16 md:bottom-0 left-0 right-0 ">
+        <div className="absolute bottom-10 md:bottom-0 left-0 right-0 ">
           <FollowMe />
         </div>
       </Fade>
