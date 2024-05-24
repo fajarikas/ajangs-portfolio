@@ -52,13 +52,27 @@ const Navbar = () => {
             </button>
           )}
         </div>
-        <button onClick={handleClick} className="md:hidden">
-          <CgMenuRight className="text-black dark:text-white text-2xl" />
-        </button>
+        <div className="md:hidden flex space-x-4">
+          {theme === "dark" ? (
+            <button
+              className="text-black dark:text-gray-400 "
+              onClick={handleMode}
+            >
+              <MdDarkMode className="text-2xl" />
+            </button>
+          ) : (
+            <button className="text-black dark:text-white" onClick={handleMode}>
+              <MdLightMode className="text-2xl" />
+            </button>
+          )}
+          <button onClick={handleClick}>
+            <CgMenuRight className="text-black dark:text-white text-2xl" />
+          </button>
+        </div>
       </div>
 
       {nav && (
-        <div className="block md:hidden bg-[#020202] pb-5 w-10/12 mx-auto justify-between items-center">
+        <div className="block md:hidden bg-white dark:bg-[#020202]    pb-5 w-10/12 mx-auto justify-between items-center">
           <div className="text-gray-400">
             <NavbarMenu url="/home" name="Home" number="01" />
             <NavbarMenu url="/about" name="About" number="02" />
