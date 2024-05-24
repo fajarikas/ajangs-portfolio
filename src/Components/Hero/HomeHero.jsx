@@ -32,14 +32,14 @@ const HomeHero = () => {
           />
           <div className="w-9/12 md:w-3/4 md:mt-0 mt-5">
             <p className="text-green text-lg text-left">Hello 👋 I am</p>
-            <p className="font-semibold text-4xl md:text-7xl text-white">
+            <p className="font-semibold text-4xl md:text-7xl text-black dark:text-white">
               Fajar Ika<span className="text-green"> Saputra</span>,
             </p>
-            <p className="text-white font-semibold mt-5 text-2xl md:text-4xl">
+            <p className="text-black dark:text-white font-semibold mt-5 text-2xl md:text-4xl">
               I am a <span ref={el} className="text-green"></span>
-              <span className="text-white"> Developer</span>
+              <span> Developer</span>
             </p>
-            <p className="text-white text-justify md:text-left md:w-full mt-5 md:mt-10 font-light text-sm md:text-base">
+            <p className="text-black dark:text-white text-justify md:text-left md:w-full mt-5 md:mt-10 font-light text-sm md:text-base">
               Thanks for visiting my portfolio. I specialize in web development,
               design, and branding. I create attractive and functional websites
               using front-end languages such as HTML, CSS, and JavaScript, as

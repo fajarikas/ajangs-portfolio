@@ -4,10 +4,10 @@ import Navbar from "./Components/Navbar/Navbar";
 import Home from "./Pages/Home/Home";
 import Footer from "./Components/Footer/Footer";
 import Loading from "./Components/Loading/Loading";
-import "./App.css";
-import "./index.css";
 import About from "./Pages/About/About";
 import Service from "./Pages/Service/Service";
+import "./App.css";
+import "./index.css";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -17,26 +17,28 @@ function App() {
       setIsLoading(false);
     }, 6000);
 
-    // Clear the timer when the component is unmounted
     return () => clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
+    const theme = localStorage.getItem("theme") || "dark";
+    document.documentElement.classList.toggle("dark", theme === "dark");
   }, []);
 
   if (isLoading) {
     return (
-      <>
-        <div className="bg-[#020202] min-h-screen max-w-screen font-be-vietnam overflow-hidden">
-          <Loading />
-        </div>
-      </>
+      <div className="bg-[#020202] min-h-screen max-w-screen font-be-vietnam overflow-hidden">
+        <Loading />
+      </div>
     );
   }
 
   return (
-    <div className="bg-[#020202] min-h-screen max-w-screen font-be-vietnam overflow-hidden">
+    <div className="bg-white dark:bg-[#020202] min-h-screen max-w-screen font-be-vietnam overflow-hidden">
       <Router>
         <div className="w-11/12 md:w-10/12 mx-auto overflow-hidden">
           <Navbar />
-          <div className="relative ">
+          <div className="relative">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/home" element={<Home />} />

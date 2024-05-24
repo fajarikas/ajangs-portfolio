@@ -8,10 +8,10 @@ const AboutMe = ({ title, content }) => {
         <TextLeft title="About Me" />
       </Slide>
       <Fade cascade={true}>
-        <p className="font-semibold text-3xl md:text-5xl mt-3 text-white">
+        <p className="font-semibold text-3xl md:text-5xl mt-3 text-black dark:text-white">
           {title}
         </p>
-        <p className="text-white text-left text-md font-regular mt-7">
+        <p className="text-black dark:text-white text-left text-md font-regular mt-7">
           {content}
         </p>
       </Fade>

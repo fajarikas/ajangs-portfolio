@@ -4,6 +4,7 @@ import TextLeft from "../../Components/Header/TextLeft";
 import { Bounce, Slide } from "react-awesome-reveal";
 import { services } from "../../Dummy/services";
 import Button from "../../Components/Button/Button";
+import { Carousel } from "react-responsive-carousel";
 
 const Service = () => {
   const [activeService, setActiveService] = useState(services[0]); // Set default service to the first one
@@ -19,7 +20,7 @@ const Service = () => {
           <TextLeft title="My Special Services" />
         </Slide>
 
-        <div className="flex mt-5 space-x-2 w-full justify-between">
+        <div className=" hidden md:flex mt-5 space-x-2 w-full justify-between">
           {services.map((data, key) => (
             <Slide key={key}>
               <Button
@@ -31,15 +32,15 @@ const Service = () => {
           ))}
         </div>
 
-        <Bounce>
+        <Bounce className="hidden md:inline">
           {activeService && (
-            <div className=" py-5 items-center text-white border border-white mt-10 rounded-xl">
+            <div className=" py-5 items-center text-black dark:text-white border border-black dark:border-white mt-10 rounded-xl">
               <div className="flex items-center mx-auto w-full text-center justify-center space-x-4">
                 <activeService.icon
                   className="items-center text-center"
                   size={50}
                 />
-                <p className="mt-2 text-2xl text-justify font-semibold   ">
+                <p className="mt-2 text-lg md:text-2xl text-justify font-semibold   ">
                   {activeService.title}
                 </p>
               </div>
@@ -49,6 +50,25 @@ const Service = () => {
             </div>
           )}
         </Bounce>
+
+        <Carousel showArrows className="inline md:hidden">
+          {activeService && (
+            <div className=" py-5 items-center text-black dark:text-white border border-white mt-10 rounded-xl">
+              <div className="flex items-center mx-auto w-full text-center justify-center space-x-4">
+                <activeService.icon
+                  className="items-center text-center"
+                  size={50}
+                />
+                <p className="mt-2 text-lg md:text-xl text-justify font-semibold   ">
+                  {activeService.title}
+                </p>
+              </div>
+              <div className="mt-5 block items-center text-sm text-justify w-11/12 mx-auto">
+                <p>{activeService.description}</p>
+              </div>
+            </div>
+          )}
+        </Carousel>
       </div>
     </>
   );

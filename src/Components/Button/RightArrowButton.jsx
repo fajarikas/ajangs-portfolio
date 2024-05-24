@@ -7,7 +7,7 @@ const RightArrowButton = ({ url, text }) => {
     <>
       <button
         onClick={() => navigate(url)}
-        className="flex md:text-base text-sm text-white items-center space-x-2  hover:scale-110 hover:-rotate-6 transition delay-50"
+        className="flex md:text-base text-sm text-black dark:text-white items-center space-x-2  hover:scale-110 hover:-rotate-6 transition delay-50"
       >
         <p>{text}</p>
         <FaArrowRightLong className="text-green" />
